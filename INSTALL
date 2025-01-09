@@ -1,0 +1,10 @@
+Building 2X2
+
+See README.md for instructions on building 2X2 QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of 2X2.
+
+# TODO Other build instructions are not currently available
+See build-*.txt for instructions on building 2X2d,
+the intended-for-services, no-graphical-interface, reference
+implementation of 2X2.
