@@ -1,22 +1,22 @@
 # 2x2coin
 
 
-https://2x2coin.com     Official Website 
-https://explorer.2x2coin.com     ( Blockexplorer including API )
-
-Hashing algorithm: x11
-Proof type: Proof-of-Stake
-Block time:90 seconds
-Coin maturity:24 hours
-Staking period:minimum 24 hours
-Staking rewards:365% per year
-Transaction fee:min 1 coin
-Coinbase maturity:60 confirmations
-Supply:unlimited
+https://2x2coin.com     Official Website<br>
+https://explorer.2x2coin.com     ( Blockexplorer including API )<br>
+<br>
+Hashing algorithm: x11<br>
+Proof type: Proof-of-Stake<br>
+Block time: 90 seconds<br>
+Coin maturity: 24 hours<br>
+Staking period: minimum 24 hours<br>
+Staking rewards:365% per year<br>
+Transaction fee:min 1 coin<br>
+Coinbase maturity: 40 confirmations<br>
+Supply:unlimited<br>
 
 
 ## How to compile and use the Linux Deamon
-Tested and working on Ubtunu 14 - 16.04 and 18.04 Version.
+Tested and working on Ubtunu 14 - 16.04 and 18.04 Version.<br>
 Versions 20.04 and later do not currently compile due to changes in OpenSSL 1.1
 and the Boost C++ library in that version.
 
@@ -101,11 +101,13 @@ It should return an error, telling you to set up config file in a directory.
 
 ## Create a config file
 
-Now we’ll set up the config file. Note that this is case sensitive.
-```
+Now we’ll set up the config file. Note that this is case sensitive.<br>
 Linux
+```
 nano ~/.2X2/2X2.conf
+```
 Winodws
+```
 C:\Users\YourUserName\AppData\Roaming\InfiniteRicks 
 ```
 Add the following, save and exit:
@@ -159,8 +161,8 @@ Type:
 help
 ```
 for a full list of commands available.
-## Attention!!!
-Do not keep more than 90,000,000,000 2X2 coins in your wallet.
-More than 90,000,000,000 coins becomes a negative balance.
+## Attention!!!<br>
+Do not keep more than 90,000,000,000 2X2 coins in your wallet.<br>
+More than 90,000,000,000 coins becomes a negative balance.<br>
 If you are lucky enough to have that much start a second wallet on another computer.
 
