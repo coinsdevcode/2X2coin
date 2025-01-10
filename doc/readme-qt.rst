@@ -52,18 +52,6 @@ sudo apt-get install qt5-qmake qtbase5-dev qtbase5-dev-tools libqt5svg5-dev
 qmake RELEASE=1
 make STATIC=1
 
-------- /lib/x86_64-linux-gnu/libdl.so.2: error adding symbols: DSO missing from command line -------
-
-Edit the Makefile, line 41:
-
-nano Makefile
-LIBS          = $(SUBLIBS) -Wl,-Bstatic -lminiupnpc /home/root1/2x2/src/leveldb/libleveldb.a /home/root1/2x2/src/leveldb/libmemenv.a -lrt -lssl -lcrypto -ldb_cxx -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread -Wl,-Bdynamic -lQt5Widgets -lQt5Gui -lQt5Core -l pthread -lGL 
-"Add -ldl at the end of the line"
-LIBS          = $(SUBLIBS) -Wl,-Bstatic -lminiupnpc /home/root1/2x2/src/leveldb/libleveldb.a /home/root1/2x2/src/leveldb/libmemenv.a -lrt -lssl -lcrypto -ldb_cxx -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread -Wl,-Bdynamic -lQt5Widgets -lQt5Gui -lQt5Core -l pthread -lGL -ldl
-
-To save control + x, y, enter.
-make STATIC=1
-
 Windows
 --------
 
