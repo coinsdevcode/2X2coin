@@ -4,6 +4,16 @@
 https://2x2coin.com     Official Website 
 https://explorer.2x2coin.com     ( Blockexplorer including API )
 
+Hashing algorithm: x11
+Proof type: Proof-of-Stake
+Block time:90 seconds
+Coin maturity:24 hours
+Staking period:minimum 24 hours
+Staking rewards:365% per year
+Transaction fee:min 1 coin
+Coinbase maturity:60 confirmations
+Supply:unlimited
+
 
 ## How to compile and use the Linux Deamon
 Tested and working on Ubtunu 14 - 16.04 and 18.04 Version.
@@ -93,7 +103,10 @@ It should return an error, telling you to set up config file in a directory.
 
 Now we’ll set up the config file. Note that this is case sensitive.
 ```
+Linux
 nano ~/.2X2/2X2.conf
+Winodws
+C:\Users\YourUserName\AppData\Roaming\InfiniteRicks 
 ```
 Add the following, save and exit:
 ```
@@ -146,3 +159,8 @@ Type:
 help
 ```
 for a full list of commands available.
+## Attention!!!
+Do not keep more than 90,000,000,000 2X2 coins in your wallet.
+More than 90,000,000,000 coins becomes a negative balance.
+If you are lucky enough to have that much start a second wallet on another computer.
+
