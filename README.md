@@ -108,7 +108,7 @@ nano ~/.2X2/2X2.conf
 ```
 Winodws
 ```
-C:\Users\YourUserName\AppData\Roaming\InfiniteRicks 
+C:\Users\YourUserName\AppData\Roaming\2X2
 ```
 Add the following, save and exit:
 ```
