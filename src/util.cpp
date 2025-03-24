@@ -1052,27 +1052,7 @@ string randomStrGen(int length) {
  
      return result;
  }
- 
- void createConf()
- {
-     srand(static_cast<unsigned int>(time(NULL)));
- 
-     ofstream pConf;
- #if BOOST_FILESYSTEM_VERSION >= 3
-     pConf.open(GetConfigFile().generic_string().c_str());
- #else
-     pConf.open(GetConfigFile().string().c_str());
- #endif
-     pConf << "rpcuser=user"
-             + randomStrGen(15)
-             + "\nrpcpassword="
-             + randomStrGen(15)
-             + "\n#(0=off, 1=on) staking - turn staking on or off"
-             + "\nstaking=1"
-             + "\nrpcallowip=127.0.0.1";
-     pConf.close();
- }
-    
+     
     LOCK(csPathCached);
 
     if (mapArgs.count("-datadir")) {
