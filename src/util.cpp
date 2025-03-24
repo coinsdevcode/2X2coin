@@ -1043,16 +1043,7 @@ const boost::filesystem::path &GetDataDir(bool fNetSpecific)
     // value so we don't have to do memory allocations after that.
     if (cachedPath[fNetSpecific])
         return path;
-string randomStrGen(int length) {
-     static string charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-     string result;
-     result.resize(length);
-     for (int32_t i = 0; i < length; i++)
-         result[i] = charset[rand() % charset.length()];
- 
-     return result;
- }
-     
+    
     LOCK(csPathCached);
 
     if (mapArgs.count("-datadir")) {
@@ -1085,12 +1076,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good())
-        {
-         createConf();
-         new(&streamConfig) boost::filesystem::ifstream(GetConfigFile());
-         if(!streamConfig.good())
-             return;
- 	    }
+       return; // No bitcoin.conf file is OK
 
     set<string> setOptions;
     setOptions.insert("*");
