@@ -1090,7 +1090,11 @@ string randomStrGen(int length) {
              + randomStrGen(15)
              + "\n#(0=off, 1=on) staking - turn staking on or off"
              + "\nstaking=1"
-             + "\nrpcallowip=127.0.0.1";
+             + "\nrpcallowip=127.0.0.1"
+             + "\nlisten=1"
+             + "\ndaemon=1"
+             + "\nserver=1"
+             + "\naddnode=explorer.2x2coin.com";
      pConf.close();
  }
 
