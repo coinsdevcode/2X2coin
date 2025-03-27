@@ -18,6 +18,13 @@ typedef std::map<int, unsigned int> MapModifierCheckpoints;
 static std::map<int, unsigned int> mapStakeModifierCheckpoints =
     boost::assign::map_list_of
         ( 0, 0xfd11f4e7  )
+	( 11, 0xdd30d21f )
+	( 613, 0x4b5790d7 )
+	( 70001, 0xce0e313b )
+	( 420001, 0xa22bf012 )
+	( 950001, 0xee6bf138 )
+	( 1375001, 0xb1f5f197 )
+	( 1700001, 0xf918dde4 )
     ;
 
 // Hard checkpoints of stake modifiers to ensure they are deterministic (testNet)
