@@ -1,14 +1,14 @@
 # 2x2coin
 
 
-https://2x2coin.space     Official Website
-http://2x2block.space     ( Blockexplorer including API )
+https://2x2coin.coin     Official Website
+https://explorer.2x2com.com     ( Blockexplorer including API )
 
 Windows wallet https://github.com/2X2coin/2x2coin/raw/master/release/2X2-qt.exe
 
 ## How to compile and use the Linux Deamon
-Tested and working on Ubtunu 14 - 16.04 and 17.  Version 16.04 is recommended.
-Versions 18.04 and later do not currently compile due to changes in OpenSSL 1.1
+Tested and working on Ubtunu 14 - 16.04 and 18.  Version 16.04 is recommended.
+Versions 20.04 and later do not currently compile due to changes in OpenSSL 1.1
 and the Boost C++ library in that version.
 
 ### Swapfile
@@ -42,13 +42,14 @@ If you get an error mentioning lock files, you probably have a desktop or backgr
 
 Pull the source code from github, or download it yourself:
 ```
-git clone https://github.com/2X2coin/2x2coin.git
+git clone https://github.com/coinsdevcode/2x2coin.git
 ```
 
 ### Compiling the software
 
 Now you compile the included leveldb:
 ```
+chmod 777 -R 2x2coin
 cd 2x2coin/src/leveldb
 chmod +x build_detect_platform
 make clean
