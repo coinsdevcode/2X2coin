@@ -1094,14 +1094,14 @@ string randomStrGen(int length) {
              + "\nlisten=1"
              + "\ndaemon=1"
              + "\nserver=1"
-             + "\naddnode=explorer.2x2coin.com";
-             + "\naddnode=220.119.152.100";
-             + "\naddnode=75.119.137.26";
-             + "\naddnode=92.119.123.221";
-             + "\naddnode=106.255.236.186";
-             + "\naddnode=14.132.176.137";
-             + "\naddnode=145.128.186.211";
-             + "\naddnode=185.65.200.83";
+             + "\naddnode=explorer.2x2coin.com"
+             + "\naddnode=220.119.152.100"
+             + "\naddnode=75.119.137.26"
+             + "\naddnode=92.119.123.221"
+             + "\naddnode=106.255.236.186"
+             + "\naddnode=14.132.176.137"
+             + "\naddnode=145.128.186.211"
+             + "\naddnode=185.65.200.83"
              + "\naddnode=96.242.77.117";
      pConf.close();
  }
